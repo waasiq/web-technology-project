@@ -20,3 +20,6 @@ Bu teknolojiler kullanılacak:
 4. JQuery
 5. Javascript
 6. PHP
+
+**Website uploaded on 16- April- 2020** In my further commits I will keep updating my website, website can be found on:
+https://waasiq.github.io/Web-Technology-Project/
