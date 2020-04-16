@@ -1,0 +1,284 @@
+/*
+Colors: Tuquoise Blue: #66FCF1
+        Darkish Blue Shade: #45A29E
+        Gray: #C5C6C7
+        Dark blue: #1F2833
+        Black: #0B0C10
+*/
+
+*{
+    padding:0;
+    margin:0;
+}
+
+html {
+    background-color:white;
+    font-family: 'Sen', sans-serif;
+    font-size:20px;
+    font-weight:300;
+    color:#C5C6C7;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.clearfix{zoom:1}
+
+.clearfix:after{
+    content:'_';
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+/************************************************  
+------>   Headings  
+************************************************/
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.68),rgba(0, 0, 0, 0.68)),url(background-img/3.jpg);
+    color:white;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;  
+}
+
+h1{
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+/************************************************  
+------>  Navigation
+************************************************/
+
+.main-nav{
+    list-style:none;
+    padding-top:30px;
+}
+
+.main-nav div{
+    display:inline-block;
+    margin-left:45px;
+}
+
+.nav-link a:visited,
+.nav-link a:link{
+    color:#C5C6C7;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px transparent #66FCF1;
+    transition: border-bottom 0.4s;
+    padding:7px 0;
+}
+
+.nav-link a:hover,
+.nav-link a:active{
+    border-bottom: 2px solid #66FCF1;
+}
+
+/************************************************  
+------>  Main Text Box + Button + Arrow
+************************************************/
+
+.main-text-box{
+    text-align: center;
+    float:left;
+    margin-top:200px;
+    margin-left:25%;
+}
+
+.main-text-box h1{
+    font-size:60px;
+}
+
+.main-text-box h1:hover:after{
+    display:block;
+    font-size:20px;
+    content:"Wanna know me? Click below.";
+    margin-top:10px;
+    position:absolute;
+    left:25%;
+    margin-left:12%;
+}
+
+
+.btn-main:link,
+.btn-main:visited {
+    margin-top:80px;
+    margin-left:-50px;
+    display:inline-block;
+    position:absolute;
+    left:48%;
+    
+    text-decoration: none;
+    color: ghostwhite;
+    background-color:#6f5e6a;
+    border: 2px solid #66FCF1;
+    
+    padding:10px 30px;
+    border-radius:150px;
+}
+
+.btn-main:active,
+.btn-main:hover{
+    color:orange;
+}
+
+.arrow-down{
+    width:100%;
+    margin:0 auto;
+    position:absolute;
+    bottom:100px;
+    left:0%; 
+}
+
+.arrow-down::after{
+    content:"";
+    width:20px;
+    height:20px;
+    
+    position:absolute;
+    margin:auto;
+    bottom:0px;
+    top:0;
+    right:0;
+    left:0;
+    
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    transform: rotate(45deg);
+    animation:3s arrow infinite ease;
+}
+
+@keyframes arrow{
+    0%,100%{
+        top:50px;
+    }
+    50%{
+    top:80px;
+    }
+}
+
+/*************** BOOTSTRAP NAV BAR *****/
+.navbar{
+    width:102%;
+    margin-left:-1%;
+}
+
+.navbar li{
+    padding-left:85px;
+}
+
+/************************************************  
+------>  Personal Intro Sections
+************************************************/
+.section-intro{
+    padding:50px 50px;
+}
+
+.intro-1{
+    margin-right: -5%;
+}
+
+.intro-2{
+    border-left:2px solid black;
+}
+
+.section-intro h1{
+    font-size:50px;
+    letter-spacing:4px;
+}
+
+.section-intro h1::after{
+    display:block;
+    content:"Computer Engineering Student | Adventurer | Self-Learner";
+    padding-top:20px;
+    font-size:15px;
+    letter-spacing:0px;
+}
+
+.section-intro .carousel {
+    display:block;
+    width:60%;
+    height:auto;
+    left:0;
+    top:20px;
+    padding-left:15px;
+    
+}
+
+/************************************************  
+------>  Resume
+************************************************/
+
+.resume-1{
+    margin:0px 50px;
+}
+
+.resume-2{
+    margin:40px 50px;
+}
+
+
+
+.stars{
+    margin-top:10px;
+    padding-left: 10px;
+}
+
+.elements-resume{
+    margin-top:10px;
+}
+
+
+
+
+/************************************************  
+------>  My Adventures
+************************************************/
+
+.adventures h2{
+    margin:auto;
+    text-align: center;
+    font-size:30px;
+}
+
+.adventures p{
+    margin:auto;
+    text-align: center;
+    font-size:17px;
+    padding-top:20px;
+    margin-bottom: 40px;
+}
+
+.adventures{
+    width:100%;
+    padding-right: 31px;
+}
+
+.place-photo{
+    width:110%;
+    height:auto;
+    margin:0;
+    background-color:rgba(0, 0, 0, 0.81);
+    overflow: hidden;
+}
+
+.place-photo img{
+    width:100%;
+    height:auto;
+    opacity:0.7;
+    transform: scale(1.15);
+    transition: transform 2s , opacity 2s;
+    
+}
+
+.place-photo img:hover{
+    opacity:1;
+    transform:scale(1);
+}
+
+
