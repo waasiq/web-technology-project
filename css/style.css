@@ -60,7 +60,7 @@ h1{
 
 .main-nav div{
     display:inline-block;
-    margin-left:45px;
+    margin-left:35px;
 }
 
 .nav-link a:visited,
@@ -131,7 +131,7 @@ h1{
     width:100%;
     margin:0 auto;
     position:absolute;
-    bottom:100px;
+    margin-top:10%;
     left:0%; 
 }
 
@@ -206,8 +206,7 @@ h1{
     height:auto;
     left:0;
     top:20px;
-    padding-left:15px;
-    
+    padding-left:15px;    
 }
 
 /************************************************  
@@ -222,8 +221,6 @@ h1{
     margin:40px 50px;
 }
 
-
-
 .stars{
     margin-top:10px;
     padding-left: 10px;
@@ -233,7 +230,26 @@ h1{
     margin-top:10px;
 }
 
+.project-element{
+    margin-top:12px;
+}
 
+.btn-resume:link,
+.btn-resume:visited {
+    margin-left:40%;
+    text-decoration: none;
+    color: ghostwhite;
+    background-color:#6f5e6a;
+    border: 2px solid #66FCF1;
+    
+    padding:10px 30px;
+    border-radius:150px;
+}
+
+.btn-resume:active,
+.btn-resume:hover{
+    color:orange;
+}
 
 
 /************************************************  
@@ -255,8 +271,8 @@ h1{
 }
 
 .adventures{
-    width:100%;
-    padding-right: 31px;
+    width:100.8%;   
+    margin-left:-2%;
 }
 
 .place-photo{
@@ -272,13 +288,137 @@ h1{
     height:auto;
     opacity:0.7;
     transform: scale(1.15);
-    transition: transform 2s , opacity 2s;
-    
+    transition: transform 2s , opacity 2s;    
 }
 
 .place-photo img:hover{
     opacity:1;
     transform:scale(1);
+}
+
+/**********************************************************
+----- Contact Form -----
+**********************************************************/
+
+.section-form {
+    margin:50px 50px;   
+}
+
+.contact-form {
+    width:60%;
+    margin: 0 auto;
+}
+
+.form-space{
+    margin:10px 10px;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select{
+    width:100%;
+    padding:4px;
+    border-radius:3px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    height:100px;
+}
+
+*:focus {outline:none;}
+
+.btn-padding{
+    margin-left:60%;
+    margin-top:20px;
+}
+
+
+.contact-links{
+    padding-left:20%;
+    font-size:40px;
+}
+
+.contact-links a{
+    text-decoration: none;
+    color:#888;
+    border: 0;
+}
+
+/**********************************************************
+----- Footer -----
+**********************************************************/
+
+.footer {
+    padding: 30px 80px;
+    background-color: #333;
+    font-size:80%;
+    color:#C5C6C7;
+}
+
+.footer-nav{
+    list-style: none;
+    float:left;    
+}
+
+.social-links {
+    list-style: none;
+    float:right;
+}
+
+.footer-nav li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.social-links li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited,
+.footer-nav li a:visited,
+.footer-nav li a:link{
+    text-decoration: none;
+    color:#888;
+    border: 0;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size:130%;
+}
+
+.facebook,
+.insta, 
+.linkedin{
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}  
+
+
+.facebook:hover{
+    color:#3b5998;
+}
+
+.insta:hover{
+    color:#4c5fd7;
+}
+
+.linkedin:hover{
+    color:#1da1f2;
+}
+
+footer p{
+    text-align:center;
+    margin-left:1%;
 }
 
 
