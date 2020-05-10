@@ -1,25 +1,28 @@
 ## Web Technology Project 2020 (Sakarya University)
 
-A website representing me and my country given as a second semester project.
+A portfolio website which represents me and my country given as a second semester project.
 
-**Ödev dokumanlar *Homework Documents* folderde koydum.** 
+#### Access
+Website can be cloned. For online access click the one following link:
+[Github Hosted Website](https://waasiq.github.io/Web-Technology-Project/)
+[Online Hosted Website](https://b181210557.000webhostapp.com/)
 
-Benim bir kısmımı tanıtan bir web sitesi. Bu sitede aşağıda listelen gibi bölümler olacak:
-
-1. About Me (Hakkımda)
+#### Components of Website                    
+1. About Me (Hakkımda) 
 2. Resume (CV)
-3. My Country (Ülkem)
+3. My Country (Ülkem)  
+4. Heritage (Mirasimiz)
 4. Contact Me (Bana ulaşın! - İletişim bilgilerim)
-5. Sign Up! (Kaydolun)
+5. LogIn! (Giriş) 
 
-Bu teknolojiler kullanılacak: 
-
+### Built with
 1. HTML
 2. CSS
 3. Bootstrap CSS
-4. JQuery
-5. Javascript
-6. PHP
+4. Javascript
+5. PHP
 
-**Website uploaded on 16- April- 2020** In my further commits I will keep updating my website, website can be found on:
-https://waasiq.github.io/Web-Technology-Project/
+#### Homework Documents
+Ödev dokumanlar *Homework Documents* folderde koydum.
+Documents have been put in the *Homework Documents* folder.
+

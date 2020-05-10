@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
     <head>
         <title> Waasiq's Portfolio </title>
         
@@ -78,7 +78,7 @@
                <div class="carousel slide" id="slides"  data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/pic-3.jpg" alt="First slide">
+                                <img class="d-block w-100" src="img/pic-3.JPG" alt="First slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="img/pic-kocaeli.jpg" alt="Second slide">
@@ -205,7 +205,7 @@
                <div class="elements-resume"> High-School (2016-2018) </div>
             </div>
             <div class="col-md-6 col-sm-12">
-               <div class="elements-resume"> <a href="https://www.cch.edu.pk/" target="_blank">Cadet College Hasanabdal,Hasanabdal,Pakistan</a> </div>
+               <div class="elements-resume"> <a href="https://www.cch.edu.pk/" target="_blank">Cadet College Hasanabdal, Hasanabdal, Pakistan</a> </div>
             </div>          
           </div>
         </div>
@@ -314,47 +314,47 @@
         <div class="row" id="form">
             <form method="post" action="http://localhost/portfolio/php/myphp.php" class="contact-form" id="contact-form"> 
                 <div class="row form-space">
-                    <div class="col">
-                        <label for="name">Name</label>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="name" class="name-label">Name</label>
                     </div>
-                    <div class="col">
-                        <input type="text" name="name" id="name" placeholder="Your Name">                        
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="text" class="name-enter" name="name" id="name" placeholder="Your Name">                        
                     </div>
                 </div>
                
                 <div class="row form-space">
-                    <div class="col">
-                        <label for="email">Email</label>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="email" class="email-label">Email</label>
                     </div>
-                    <div class="col">
-                        <input type="email" name="email" id="email" placeholder="Your Email">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="email" class="email-enter" name="email" id="email" placeholder="Your Email">
                     </div>
                 </div>
                 
                 <div class="row form-space">
-                    <div class="col">
+                    <div class="col-lg-6 col-md-6 col-sm-12 newsletter">
                         <label>Do you want my monthly newsletter?</label>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 col-md-6 col-sm-12 checkbox">
                         <input type="checkbox" name="news" id="news" checked> Yes,Please
                     </div>
                 </div>
                 
                 <div class="row form-space">
-                    <div class="col">
+                    <div class="col-lg-6 col-md-6 col-sm-12 messagebox-label">
                         <label>Drop me a line</label>
                     </div>
-                    <div class="col">
-                        <textarea name="message" placeholder="Your Message"></textarea>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <textarea name="message" class="messagebox-text" placeholder="Your Message"></textarea>
                     </div>
                 </div>
                 <div class="btn-padding">
                      <div class="row">                     
-                        <div class="col">
+                        <div class="col-lg-6 col-sm-12">
                             <button type="submit" class="btn btn-primary" id="contact-submit-btn">Submit</button>
                         </div>
 
-                        <div class="col">
+                        <div class="col-lg-6 col-sm-12">
                             <button type="reset" class="btn btn-danger reset-button">Reset</button>
                         </div>
                     </div>
@@ -364,10 +364,13 @@
 
         <div class="row" style="margin-top:50px;"><h5>Want to get in touch with me on social media?</h5></div>
         <div class="row contact-links" style="padding-top:20px;">         
-                <div class="col-sm-4"> <a href="https://www.facebook.com/waasiq.masood" target="_blank"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a> </div>
-                <div class="col-sm-4">
-                     <a href="https://www.linkedin.com/in/iwaasiq/" target="_blank"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon></a></div>
-                <div class="col-sm-4">  <a href="https://www.instagram.com/iwaasiqmasood/" target="_blank"><ion-icon class="insta" name="logo-instagram"></ion-icon></a></div>               
+                <div class="col-lg-3 col-md-3 col-sm-6"> <a href="https://www.facebook.com/waasiq.masood" target="_blank"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a> </div>
+                
+                <div class="col-lg-3 col-md-3 col-sm-6"><a href="https://www.linkedin.com/in/iwaasiq/" target="_blank"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon></a></div>
+                
+                <div class="col-lg-3 col-md-3 col-sm-6">  <a href="https://www.instagram.com/iwaasiqmasood/" target="_blank"><ion-icon class="insta" name="logo-instagram"></ion-icon></a></div>  
+                             
+                <div class="col-lg-3 col-md-3 col-sm-6"> <a href="https://github.com/waasiq" target="_blank"><ion-icon name="logo-github"></ion-icon></a></div>               
         </div>
     </div>
 </section>

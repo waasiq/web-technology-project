@@ -496,17 +496,48 @@ footer p{
     .reset-button{
         margin-top:20%;
     }
+    
+    .btn-padding{
+        margin-left:250px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .header-text-box h1 {
         font-size: 36px;
+    }   
+    .btn-padding{
+        margin-left:150px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .header-text-box h1 {
         font-size: 32px;
+    }
+    .name-label{ margin-left: -80px; }
+    .name-enter{
+        margin-left:-80px;
+        
+    }
+    .email-label{ margin-left: -80px; }
+    .email-enter{
+        margin-left:-80px;
+   
+     }
+    
+    .newsletter{ margin-left:-80px; }
+    .checkbox{ margin-left:-20px; }
+    
+    .messagebox-text { margin-left:-30px; }
+    .messagebox-label { margin-left:-80px;}
+    
+    .btn-padding{
+        margin-left:10px;
+    }
+    
+    .section-form h3{
+        margin-left:-30px;
     }
 }
 
@@ -515,5 +546,8 @@ footer p{
         margin-left:0%;
         display: none;
     }
+     
+    .newsletter{ display: none; }
+    .checkbox{ display:none; }
 }
 /* RESPONSIVE */
