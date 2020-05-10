@@ -1,5 +1,5 @@
 html{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.68),rgba(0, 0, 0, 0.68)),url(background-img/1.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.68),rgba(0, 0, 0, 0.68)),url(background-img/1.jpg);    
     height:100vh;
     background-size:cover;
     background-position:center;
@@ -37,3 +37,13 @@ html{
     margin-left:33%;
     margin-bottom:30px;
 }
+
+
+@media only screen and (max-width: 530px) {
+    .login-form{       
+        top:40%;
+        left:20%;
+    }
+}
+    
+

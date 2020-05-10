@@ -269,6 +269,7 @@ h1{
     margin-top:12px;
 }
 
+.btn-resume,
 .btn-resume:link,
 .btn-resume:visited {
     margin-left:40%;
@@ -285,7 +286,6 @@ h1{
 .btn-resume:hover{
     color:orange;
 }
-
 
 /************************************************  
 ------>  My Adventures
@@ -336,7 +336,7 @@ h1{
 **********************************************************/
 
 .section-form {
-    margin:50px 50px;   
+    margin:100px 50px;
 }
 
 .contact-form {
@@ -492,6 +492,10 @@ footer p{
     .header-text-box h1 {
         font-size: 46px;
     }
+    
+    .reset-button{
+        margin-top:20%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -503,6 +507,13 @@ footer p{
 @media only screen and (max-width: 600px) {
     .header-text-box h1 {
         font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .btn-resume{
+        margin-left:0%;
+        display: none;
     }
 }
 /* RESPONSIVE */

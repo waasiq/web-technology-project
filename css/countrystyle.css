@@ -50,58 +50,103 @@ header{
 }
 
 /************************************************  
------->  Navigation + Top
+------>  Navigation
 ************************************************/
 
-.main-nav{
-    list-style:none;
-    padding-top:30px;
+.navigation-bar {
+    background-color: transparent;
+    height: auto;
+    left: 0;
+    padding: 0 18px;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+    z-index: 1000;
 }
 
-.main-nav div{
-    display:inline-block; 
+.navigation-bar.active {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.nav-link a:visited,
-.nav-link a:link{
-    color:#C5C6C7;
+.navigation-bar.active .navigation-nav-link {
+    color: #111;
+}
+
+.navigation-bar.active .navigation-nav-link:hover {
+    background-color: #eee;
+}
+
+.navigation-nav {
+    float: right;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-nav-link {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight:  bold;
+    padding: 12px 18px;
     text-decoration: none;
     text-transform: uppercase;
-    border-bottom: 2px transparent #66FCF1;
-    transition: border-bottom 0.4s;
-    padding:7px 0;
-    
-    margin-left:47%;
+    transition: all 0.2s ease;
 }
 
-.nav-link a:hover,
-.nav-link a:active{
-    border-bottom: 2px solid #66FCF1;
+.navigation-nav-link:hover {
+    text-decoration: none;
 }
 
-
-
-.main-text-box{
-    float:left;
-    margin-top:300px;
-    margin-left:28%;
-    margin-right:20%;
+.navigation-toggle {
+    border-radius: 4px;
+    border: 1px solid #111;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    right: 18px;
+    position: absolute;
+    top: 8px;
+    width: 40px;
 }
 
-.main-text-box h1{
-    font-size:60px;
+.navigation-toggle > * {
+    background-color: #111;
+    border-radius: 4px;
+    height: 3px;
+    left: 5px;
+    position: absolute;
+    width: 27.5px;
 }
 
-/*************** BOOTSTRAP NAV BAR *****/
-.navbar{
-    width:102%;
-    margin-left:-1%;
+.navigation-toggle span:first-child {
+    top: 7px;
 }
 
-.navbar li{
-    padding-left:85px;
+.navigation-toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-60%);
 }
+
+.navigation-toggle span:last-child {
+    bottom: 7px;
+}
+
+.header-text-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.header-text-box h1 {
+    font-size: 52px;
+    margin-bottom: 38px;
+}   
+
 
 /************************************************  
 ------>   Carousel 
@@ -160,7 +205,8 @@ header{
 }
 
 .punjab{
-    margin:50px 50px;
+    margin:0px 50px;
+    padding-top:50px;
     margin-bottom:0px;
 }
 
@@ -216,4 +262,53 @@ header{
     padding-top:50px;
 }
 
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+    .navigation-bar {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 52px 0 0 0;
+    }
+    
+    .navigation-nav {
+        display: none;
+        float: none;
+    }
+    
+    .navigation-nav.visible {
+        display: block;
+    }
+    
+    .navigation-nav-link {
+        color: #111;
+        display: block;
+    }
+    
+    .navigation-nav-link:hover {
+        background-color: #eee;
+        color: #111;
+    }
+    
+    .navigation-toggle {
+        display: inline-block;
+    }
+    
+    .header-text-box h1 {
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-text-box h1 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-text-box h1 {
+        font-size: 32px;
+    }
+}
+/* RESPONSIVE */
 

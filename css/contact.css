@@ -1,0 +1,27 @@
+body{
+      background: rgb(184,79,79);
+      background: linear-gradient(125deg, rgba(184,79,79,0.908000700280112) 5%, rgba(113,107,209,1) 30%, rgba(50,44,161,1) 69%, rgba(22,16,125,1) 98%);
+      font-size:20px;
+      position:fixed;
+      color:#ffff;
+      top:13%;
+      left:33%; 
+}
+
+.main-box{
+    background-color:#247188;
+    border-radius:15px; 
+    padding:30px 40px 60px 50px;
+}
+
+@media only screen and (max-width: 676px) {
+    body {       
+        left:10%;
+    }
+}
+
+@media only screen and (max-width: 503px) {
+    body {       
+        left:0%;
+    }
+}
