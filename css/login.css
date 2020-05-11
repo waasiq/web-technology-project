@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html{
     background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.68)),to(rgba(0, 0, 0, 0.68))),url(background-img/1.jpg);
     background-image:linear-gradient(rgba(0, 0, 0, 0.68),rgba(0, 0, 0, 0.68)),url(background-img/1.jpg);    
@@ -47,4 +54,3 @@ html{
     }
 }
     
-

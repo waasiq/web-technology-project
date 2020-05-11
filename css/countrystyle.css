@@ -39,6 +39,7 @@ p{
 ************************************************/
 
 header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.68)),to(rgba(0, 0, 0, 0.68))),url(background-img/fairymeadows.jpeg);
     background-image:linear-gradient(rgba(0, 0, 0, 0.68),rgba(0, 0, 0, 0.68)),url(background-img/fairymeadows.jpeg);
     /* Background Image */
     
@@ -60,6 +61,7 @@ header{
     padding: 0 18px;
     position: fixed;
     top: 0;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     width: 100%;
     z-index: 1000;
@@ -67,6 +69,7 @@ header{
 
 .navigation-bar.active {
     background-color: #fff;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -93,6 +96,7 @@ header{
     padding: 12px 18px;
     text-decoration: none;
     text-transform: uppercase;
+    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -127,6 +131,7 @@ header{
 
 .navigation-toggle span:nth-child(2) {
     top: 50%;
+    -webkit-transform: translateY(-60%);
     transform: translateY(-60%);
 }
 
@@ -138,6 +143,7 @@ header{
     position: absolute;
     text-align: center;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
 }
@@ -245,12 +251,17 @@ header{
     width:100%;
     height:auto;
     opacity:0.7;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
-    transition: transform 2s , opacity 2s;    
+    -webkit-transition: opacity 2s , -webkit-transform 2s;
+    transition: opacity 2s , -webkit-transform 2s;
+    transition: transform 2s , opacity 2s;
+    transition: transform 2s , opacity 2s , -webkit-transform 2s;    
 }
 
 .place-photo img:hover{
     opacity:1;
+    -webkit-transform:scale(1);
     transform:scale(1);
 }
 
@@ -267,6 +278,7 @@ header{
 @media only screen and (max-width: 992px) {
     .navigation-bar {
         background-color: #fff;
+        -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 52px 0 0 0;
     }
@@ -311,4 +323,3 @@ header{
     }
 }
 /* RESPONSIVE */
-
