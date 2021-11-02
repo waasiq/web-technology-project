@@ -4,7 +4,7 @@ A portfolio website which represents me and my country given as a second semeste
 
 #### Access
 Website can be cloned. For online access click the one following link:\
-[Github Hosted Website](https://waasiq.github.io/Web-Technology-Project/)\
+[Github Hosted Website](https://waasiq.github.io/web-technology-project/)\
 [Online Hosted Website](https://b181210557.000webhostapp.com/)
 
 #### Components of Website                    
